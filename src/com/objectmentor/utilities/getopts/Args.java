@@ -178,7 +178,7 @@ public class Args {
     }
 
     public boolean getBoolean(char arg) {
-        return falseIfNull(booleanArgs.get(arg).getBoolean());
+        return booleanArgs.get(arg).getBoolean();
     }
 
     private boolean falseIfNull(Boolean b) {
